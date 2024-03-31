@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 300px;
+            margin: 100px auto;
+            box-shadow: 0 0 20px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container>img {
+            height: 400px;
+            width: 300px;
+        }
+
+        .wrapper {
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .w1 {
+            background-color: chartreuse;
+            /* z-index: 1; */
+            transition: all 1s linear 3s;
+
+        }
+
+        .w2 {
+            background-color: rgb(255, 115, 0);
+            transition: all 1s linear 2s;
+
+        }
+
+        .w3 {
+            background-color: rgb(0, 238, 255);
+            transition: all 1s linear 1s;
+        }
+
+        .w4 {
+            background-color: rgb(166, 0, 255);
+            transition: all 1s linear 0s;
+        }
+
+        .container:hover>.w4 {
+            transform: translateX(300px);
+        }
+
+        .container:hover>.w3 {
+            transform: translateY(-400px);
+        }
+
+        .container:hover>.w2 {
+            transform: translateX(-300px);
+        }
+
+        .container:hover>.w1 {
+            transform: translateY(400px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2024/02/16/19/22/green-parrot-8578205_640.jpg" alt="">
+        <div class="wrapper w1"></div>
+        <div class="wrapper w2"></div>
+        <div class="wrapper w3"></div>
+        <div class="wrapper w4"></div>
+    </div>
+
+</body>
+
+</html>

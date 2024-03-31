@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ele {
+            height: 200px;
+            width: 400px;
+            margin: 20px;
+            font-size: 60px;
+        }
+
+        .ele1 {
+            background-color: crimson;
+            position: relative;
+            z-index: 5;
+        }
+
+        .ele2 {
+            background-color: rgb(252, 182, 4);
+            position: relative;
+            top: -100px;
+            left: 120px;
+            /* z-index: -1; */
+        }
+
+        .ele3 {
+            background-color: lawngreen;
+            position: relative;
+            top: -250px;
+            left: 200px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ele ele1">1</div>
+    <div class="ele ele2">2</div>
+    <div class="ele ele3">3</div>
+</body>
+
+</html>
